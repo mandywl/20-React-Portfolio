@@ -1,0 +1,71 @@
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url("./Profile_background.png");
+  min-height: 100%;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.entry-header.heading {
+  text-align: center;
+  z-index: 5;
+  position: relative;
+}
+
+.heading.entry-header .entry-title {
+  /* margin-right: -165px; */
+  opacity: 0.6;
+}
+
+.heading .entry-title {
+  display: block;
+  font-size: 5rem;
+  line-height: 1.1;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  opacity: 0.6;
+  font-weight: 900;
+}
+h2 {
+  color: #002535;
+}
+
+.block {
+  background-color: #fff;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.profile-title {
+  padding-top: 50%;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    /* background-attachment: scroll; */
+    min-height: 800px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .heading.entry-header .entry-title {
+    margin-right: -165px;
+  }
+  .entry-header.heading {
+    text-align: right;
+  }
+  .block {
+    padding: 30px 30px 30px 160px;
+  }
+}

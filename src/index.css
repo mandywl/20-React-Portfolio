@@ -1,0 +1,25 @@
+body,
+html {
+  height: 100%;
+  /* color: #777; */
+}
+
+.w3-display-middle {
+  width: 100%;
+}
+
+.linkedin {
+  word-break: break-all;
+}
+
+.icon {
+  font-size: 25px;
+}
+
+.contactLink {
+  color: inherit;
+}
+
+.form {
+  margin: 0 -16px 8px -16px;
+}
