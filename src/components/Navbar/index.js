@@ -21,12 +21,11 @@ function Navbar(props) {
       <div className="w3-bar" id="myNavbar">
         <NavItem
           className="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
-          href="javascript:void(0);"
           onClickFunction={props.onClickFunction}
           title="Toggle Navigation Menu"
           icon="fa fa-bars"
         />
-        <NavItem className="w3-bar-item w3-button" href="#home" label="HOME" />
+        <NavItem className="w3-bar-item w3-button" href="#" label="HOME" />
         <NavItem
           className="w3-bar-item w3-button w3-hide-small"
           href="#about"
@@ -44,11 +43,6 @@ function Navbar(props) {
           href="#contact"
           icon="fa fa-envelope"
           label="CONTACT"
-        />
-        <NavItem
-          className="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red"
-          href="#"
-          icon="fa fa-search"
         />
       </div>
 

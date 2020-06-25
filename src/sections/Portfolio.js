@@ -1,71 +1,85 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import ProfileContainer from "../components/ProfileContainer";
+import Coverflow from "react-coverflow";
+import { StyleRoot } from "radium";
 
 function Portfolio() {
   return (
     <>
-      <ProfileContainer backgroundImg="1" title="Portfolio" id="portfolio">
-        <div
-          id="carouselExampleIndicators"
-          class="carousel slide"
-          data-ride="carousel"
+      <ProfileContainer
+        backgroundImg="1"
+        title="Portfolio"
+        id="portfolio"
+        articleClass="portfolio"
+      >
+        <Coverflow
+          width={850}
+          height={500}
+          displayQuantityOfSide={1}
+          infiniteScroll
+          enableHeading
+          media={{
+            "@media (max-width: 900px)": {
+              width: "320px",
+              height: "300px",
+            },
+            "@media (min-width: 900px)": {
+              width: "710px",
+              height: "500px",
+            },
+            "@media (min-width: 1500px)": {
+              width: "850px",
+              height: "500px",
+            },
+          }}
         >
-          <ol class="carousel-indicators">
-            <li
-              data-target="#carouselExampleIndicators"
-              data-slide-to="0"
-              class="active"
-            ></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                class="d-block w-100"
-                src="https://www.w3schools.com/w3images/p2.jpg"
-                alt="..."
-              ></img>
-              <div class="carousel-caption d-none d-md-block">
-                <h5>first image</h5>
-                <p>this is a test</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                class="d-block w-100"
-                src="https://www.w3schools.com/w3images/p1.jpg"
-                alt="Second slide"
-              ></img>
-            </div>
-            <div class="carousel-item">
-              <img
-                class="d-block w-100"
-                src="https://www.w3schools.com/w3images/p3.jpg"
-                alt="Third slide"
-              ></img>
-            </div>
-          </div>
-          <a
-            class="carousel-control-prev"
-            href="#carouselExampleIndicators"
-            role="button"
-            data-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a
-            class="carousel-control-next"
-            href="#carouselExampleIndicators"
-            role="button"
-            data-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
+          <img
+            src="./assets/project1.png"
+            alt="CSS Zen Garden"
+            data-action="https://mandywl.github.io/cssZenGarden/"
+          />
+          <img
+            src="./assets/project2.jpg"
+            alt="Check github ranking"
+            data-action="https://github.com/mandywl/Check-Your-GitHub-Ranking"
+          />
+          <img
+            src="./assets/knowledge_hub.PNG"
+            alt="Group Project - Knowledge hub"
+            data-action="https://mandywl.github.io/project1-knowledge-hub/"
+          />
+          <img
+            src="./assets/weather_dashboard.PNG"
+            alt="Weather Dashboard"
+            data-action="https://mandywl.github.io/06-weather-dashboard-mandy/"
+          />
+          <img
+            src="./assets/day_planner.PNG"
+            alt="Day Planner"
+            data-action="https://mandywl.github.io/05-day-planner-mandy/"
+          />
+          <img
+            src="./assets/code_quiz.PNG"
+            alt="Code Quiz"
+            data-action="https://mandywl.github.io/04-web-apis-code-quiz-mandy/"
+          />
+          <img
+            src="./assets/team_profile.png"
+            alt="Team Profile Generator"
+            data-action="https://github.com/mandywl/10-Team-Profile-Generator"
+          />
+          <img
+            src="./assets/burger_app.png"
+            alt="Node Express Handlebars"
+            data-action="https://eat-da-burger-mandy.herokuapp.com/"
+          />
+          <img
+            src="./assets/shopping_cart.png"
+            alt="Group Project - Shopping Cart"
+            data-action="https://e-store-template.herokuapp.com"
+          />
+        </Coverflow>
       </ProfileContainer>
     </>
   );

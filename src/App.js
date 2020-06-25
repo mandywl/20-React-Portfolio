@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import About from "./sections/About";
 import Portfolio from "./sections/Portfolio";
 import Contact from "./sections/Contact";
+
 class App extends Component {
   constructor() {
     super();
