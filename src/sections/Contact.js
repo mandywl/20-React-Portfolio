@@ -2,59 +2,45 @@
 import React from "react";
 import ProfileContainer from "../components/ProfileContainer";
 
+export const ContactTile = (props) => {
+  return (
+    <div className="row pb-3">
+      <div className="col-sm-1 col-12">
+        <i className={`icon fa ${props.icon}`}></i>
+      </div>
+      <div className={`col-sm-11 col-12 ${props.contactClass}`}>
+        {props.children}
+      </div>
+    </div>
+  );
+};
+
 function Contact() {
   return (
     <>
       <ProfileContainer backgroundImg="1" title="Contact" id="contact">
-        <div className="row pb-3">
-          <div className="col-sm-1 col-12">
-            <i className="icon fa fa-map-marker"></i>
-          </div>
-          <div className="col-sm-11 col-12">Melbourne, AU</div>
-        </div>
-        <div className="row pb-3">
-          <div className="col-sm-1 col-12">
-            <i className="icon fa fa-phone"></i>
-          </div>
-          <div className="col-sm-11 col-12">0478949511</div>
-        </div>
-        <div className="row pb-3">
-          <div className="col-sm-1 col-12">
-            <i className="icon fa fa-envelope"></i>
-          </div>
-          <div className="col-sm-11 col-12">mandy.liu4@gmail.com</div>
-        </div>
-        <div className="row pb-3">
-          <div className="col-sm-1 col-12">
-            <i className="icon fa fa-linkedin"></i>
-          </div>
-          <div className="col-sm-11 col-12 linkedin">
-            <a
-              className="contactLink"
-              href="https://www.linkedin.com/in/mandywellslakeland/"
-            >
-              https://www.linkedin.com/in/mandywellslakeland/
-            </a>
-          </div>
-        </div>
-        <div className="row pb-3">
-          <div className="col-sm-1 col-12">
-            <i className="icon fa fa-github-square"></i>
-          </div>
-          <div className="col-sm-11 col-12">
-            <a className="contactLink" href="https://github.com/mandywl">
-              https://github.com/mandywl
-            </a>
-          </div>
-        </div>
-        <div className="row pb-3">
-          <div className="col-sm-11 col-12">
-            <a className="resume" href="assets/Images/CV_Mandy.pdf" download>
-              <strong>Download Resume</strong>
-            </a>
-          </div>
-        </div>
-        <div className="row pb-3">
+        <ContactTile icon="fa-map-marker">Melbourne, AU</ContactTile>
+        <ContactTile icon="fa-phone">0478949511</ContactTile>
+        <ContactTile icon="fa-envelope">mandy.liu4@gmail.com</ContactTile>
+        <ContactTile icon="fa-linkedin" contactClass="linkedin">
+          <a
+            className="contactLink"
+            href="https://www.linkedin.com/in/mandywellslakeland/"
+          >
+            https://www.linkedin.com/in/mandywellslakeland/
+          </a>
+        </ContactTile>
+        <ContactTile icon="fa-github-square">
+          <a className="contactLink" href="https://github.com/mandywl">
+            https://github.com/mandywl
+          </a>
+        </ContactTile>
+        <ContactTile>
+          <a className="resume" href="assets/Images/CV_Mandy.pdf" download>
+            <strong>Download Resume</strong>
+          </a>
+        </ContactTile>
+        <div className="row pb-3 ml-1">
           <p>
             Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a
             note:

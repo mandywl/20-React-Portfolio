@@ -50,11 +50,14 @@ h2 {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
+  .heading .entry-title {
+    font-size: 4rem;
+  }
   .bgimg-1,
   .bgimg-2,
   .bgimg-3 {
     /* background-attachment: scroll; */
-    min-height: 800px;
+    min-height: 1000px;
   }
 }
 

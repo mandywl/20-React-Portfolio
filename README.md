@@ -1,8 +1,8 @@
-<h1 align="center">Employee Directory</h1>
+<h1 align="center">React Portfolio</h1>
 
 > Employee Directory web app allows user to view a table of employees, sort the table by first name and filter the users by department.
 
-### ✨ [Github Repo](https://github.com/mandywl/19-Employee-Directory)
+### ✨ [Github Repo](https://github.com/mandywl/20-React-Portfolio)
 
 ### 🏠 [Deployed Url](https://employee-directory-mandy.herokuapp.com/)
 
