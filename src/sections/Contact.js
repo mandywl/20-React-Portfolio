@@ -42,8 +42,8 @@ function Contact() {
         </ContactTile>
         <div className="row pb-3 ml-1">
           <p>
-            Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a
-            note:
+            Swing by for a cup of <i className="fa fa-coffee"></i>, or leave me
+            a note:
           </p>
           <form action="/action_page.php" target="_blank">
             <div className="w3-row-padding form">

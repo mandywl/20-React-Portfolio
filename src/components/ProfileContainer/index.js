@@ -11,13 +11,15 @@ function ProfileContainer(props) {
       <div className="w3-display-middle">
         <div className="container">
           <div className="row">
-            <div className="col-md-4 col-12">
+            <div className="col-md-3 col-12">
               <header className="entry-header heading">
                 <h2 className="entry-title  profile-title">{props.title}</h2>
               </header>
             </div>
-            <div className="col-md-8 col-12">
-              <article className="block">{props.children}</article>
+            <div className="col-md-9 col-12">
+              <article className={`block ${props.articleClass}`}>
+                {props.children}
+              </article>
             </div>
           </div>
         </div>
