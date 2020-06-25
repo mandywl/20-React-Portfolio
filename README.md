@@ -1,13 +1,13 @@
 <h1 align="center">React Portfolio</h1>
 
-> Employee Directory web app allows user to view a table of employees, sort the table by first name and filter the users by department.
+> My Portfolio
 
 ### ✨ [Github Repo](https://github.com/mandywl/20-React-Portfolio)
 
 ### 🏠 [Deployed Url](https://employee-directory-mandy.herokuapp.com/)
 
 <div align="center">
-<img alt="interface" src= "public/appScreenCapture.gif" width= 60%/>
+<img alt="interface" src= "public/assets/appScreenCapture.png" width= 60%/>
 </div>
 
 ## Install
@@ -17,6 +17,14 @@
 > > ```
 >
 > The above will install the project dependencies.
+
+## Build
+
+> Builds the app for production to the `build` folder.<br>
+> It correctly bundles React in production mode and optimizes the build for the best performance.
+>
+> The build is minified and the filenames include the hashes.<br>
+> Your app is ready to be deployed!
 
 ## Usage
 

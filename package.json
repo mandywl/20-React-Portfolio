@@ -21,7 +21,8 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server.js",
+    "react start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest; npm run lint",
     "lint": "eslint --quiet .",
