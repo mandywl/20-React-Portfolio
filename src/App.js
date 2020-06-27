@@ -6,6 +6,7 @@ import About from "./sections/About";
 import Portfolio from "./sections/Portfolio";
 import Contact from "./sections/Contact";
 import emailjs from "emailjs-com";
+require("dotenv").config();
 
 class App extends Component {
   constructor() {
