@@ -4,6 +4,10 @@ html {
   /* color: #777; */
 }
 
+#root {
+  height: 100%;
+}
+
 .w3-display-middle {
   width: 100%;
 }

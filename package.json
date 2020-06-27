@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.5.0",
+    "emailjs-com": "^2.4.1",
     "express": "^4.17.1",
     "express-favicon": "^2.0.1",
     "jquery": "^3.5.1",
@@ -22,7 +23,7 @@
   },
   "scripts": {
     "start": "node server.js",
-    "react start": "react-scripts start",
+    "react-start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest; npm run lint",
     "lint": "eslint --quiet .",
@@ -43,5 +44,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
   }
 }
