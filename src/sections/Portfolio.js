@@ -8,7 +8,7 @@ function Portfolio() {
   return (
     <>
       <ProfileContainer
-        backgroundImg="1"
+        backgroundImg="2"
         title="Portfolio"
         id="portfolio"
         articleClass="portfolio"
@@ -21,7 +21,7 @@ function Portfolio() {
           enableHeading
           media={{
             "@media (max-width: 900px)": {
-              width: "320px",
+              width: "330px",
               height: "300px",
             },
             "@media (min-width: 900px)": {

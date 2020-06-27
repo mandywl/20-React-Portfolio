@@ -1,16 +1,67 @@
+/* eslint-disable camelcase */
 /* eslint-disable no-unused-vars */
 import React, { Component } from "react";
 import Navbar from "./components/Navbar";
 import About from "./sections/About";
 import Portfolio from "./sections/Portfolio";
 import Contact from "./sections/Contact";
+import emailjs from "emailjs-com";
 
 class App extends Component {
   constructor() {
     super();
+    this.state = {
+      message: "",
+      name: "Name",
+      email: "email@example.com",
+      alert: "",
+    };
     this.toggleFunction = this.toggleFunction.bind(this);
+    this.handleNameChange = this.handleNameChange.bind(this);
+    this.handleEmailChange = this.handleEmailChange.bind(this);
+    this.handleMessageChange = this.handleMessageChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  handleNameChange(event) {
+    this.setState({ name: event.target.value });
+  }
+  handleEmailChange(event) {
+    this.setState({ email: event.target.value });
+  }
+  handleMessageChange(event) {
+    this.setState({ message: event.target.value });
+  }
+  handleSubmit(event) {
+    event.preventDefault();
+    this.setState({ alert: "Sending email to Mandy Wells-Lakeland..." });
+    const templateId = "template_EmoVqIXC";
+    const userID = `${process.env.REACT_APP_USER_ID}`;
+    this.sendFeedback(
+      templateId,
+      {
+        message_html: this.state.message,
+        from_name: this.state.name,
+        reply_to: this.state.email,
+      },
+      userID
+    );
+  }
+
+  sendFeedback(templateId, variables, userID) {
+    window.emailjs
+      .send("gmail", templateId, variables, userID)
+      .then((res) => {
+        console.log("Email successfully sent!");
+        this.setState({ alert: "Email successfully sent!" });
+      })
+      .catch((err) =>
+        console.error(
+          "Oh well, you failed. Here some thoughts on the error that occured:",
+          err
+        )
+      );
+  }
   componentDidMount() {
     window.onscroll = function () {
       var navbar = document.getElementById("myNavbar");
@@ -44,7 +95,13 @@ class App extends Component {
         <Navbar onClickFunction={this.toggleFunction} />
         <About />
         <Portfolio />
-        <Contact />
+        <Contact
+          handleNameChange={this.handleNameChange}
+          handleEmailChange={this.handleEmailChange}
+          handleMessageChange={this.handleMessageChange}
+          handleSubmit={this.handleSubmit}
+          alert={this.state.alert}
+        />
       </>
     );
   }

@@ -15,7 +15,7 @@ export const ContactTile = (props) => {
   );
 };
 
-function Contact() {
+function Contact(props) {
   return (
     <>
       <ProfileContainer backgroundImg="1" title="Contact" id="contact">
@@ -53,7 +53,8 @@ function Contact() {
                   type="text"
                   placeholder="Name"
                   required
-                  name="Name"
+                  name={props.name}
+                  onChange={props.handleNameChange}
                 />
               </div>
               <div className="w3-half">
@@ -62,7 +63,8 @@ function Contact() {
                   type="text"
                   placeholder="Email"
                   required
-                  name="Email"
+                  name={props.email}
+                  onChange={props.handleEmailChange}
                 />
               </div>
             </div>
@@ -71,16 +73,19 @@ function Contact() {
               type="text"
               placeholder="Message"
               required
-              name="Message"
+              name={props.message}
+              onChange={props.handleMessageChange}
             />
             <button
               className="w3-button w3-black w3-right w3-section"
               type="submit"
+              onClick={props.handleSubmit}
             >
               <i className="fa fa-paper-plane"></i> SEND MESSAGE
             </button>
           </form>
         </div>
+        <div className="row ml-1 alert-success">{props.alert}</div>
       </ProfileContainer>
     </>
   );
