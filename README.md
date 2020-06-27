@@ -4,7 +4,7 @@
 
 ### ✨ [Github Repo](https://github.com/mandywl/20-React-Portfolio)
 
-### 🏠 [Deployed Url](https://employee-directory-mandy.herokuapp.com/)
+### 🏠 [Deployed Url](https://mandy-wellslakeland.herokuapp.com/)
 
 <div align="center">
 <img alt="interface" src= "public/assets/appScreenCapture.png" width= 60%/>
