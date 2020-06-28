@@ -20,12 +20,12 @@ function Portfolio() {
           infiniteScroll
           enableHeading
           media={{
-            "@media (max-width: 900px)": {
+            "@media (max-width: 540px)": {
               width: "330px",
               height: "300px",
             },
-            "@media (min-width: 900px)": {
-              width: "710px",
+            "@media (min-width: 540px)": {
+              width: "510px",
               height: "500px",
             },
             "@media (min-width: 1500px)": {
