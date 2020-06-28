@@ -35,7 +35,7 @@ function Contact(props) {
           </a>
         </ContactTile>
         <ContactTile>
-          <a className="resume" href="assets/Images/CV_Mandy.pdf" download>
+          <a className="resume" href="assets/CV_Mandy.pdf" download>
             <strong>Download Resume</strong>
           </a>
         </ContactTile>
