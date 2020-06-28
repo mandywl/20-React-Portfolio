@@ -21,7 +21,6 @@ function Contact(props) {
       <ProfileContainer backgroundImg="1" title="Contact" id="contact">
         <ContactTile icon="fa-map-marker">Melbourne, AU</ContactTile>
         <ContactTile icon="fa-phone">0478949511</ContactTile>
-        <ContactTile icon="fa-envelope">mandy.liu4@gmail.com</ContactTile>
         <ContactTile icon="fa-linkedin" contactClass="linkedin">
           <a
             className="contactLink"
@@ -36,7 +35,7 @@ function Contact(props) {
           </a>
         </ContactTile>
         <ContactTile>
-          <a className="resume" href="assets/Images/CV_Mandy.pdf" download>
+          <a className="resume" href="assets/CV_Mandy.pdf" download>
             <strong>Download Resume</strong>
           </a>
         </ContactTile>
