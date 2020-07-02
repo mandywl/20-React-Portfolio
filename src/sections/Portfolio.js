@@ -52,22 +52,22 @@ function Portfolio() {
           <img
             src="./assets/weather_dashboard.PNG"
             alt="Weather Dashboard"
-            data-action="https://mandywl.github.io/06-weather-dashboard-mandy/"
+            data-action="https://mandywl.github.io/weather-dashboard-mandy/"
           />
           <img
             src="./assets/day_planner.PNG"
             alt="Day Planner"
-            data-action="https://mandywl.github.io/05-day-planner-mandy/"
+            data-action="https://mandywl.github.io/day-planner-mandy/"
           />
           <img
             src="./assets/code_quiz.PNG"
             alt="Code Quiz"
-            data-action="https://mandywl.github.io/04-web-apis-code-quiz-mandy/"
+            data-action="https://mandywl.github.io/web-apis-code-quiz-mandy/"
           />
           <img
             src="./assets/team_profile.png"
             alt="Team Profile Generator"
-            data-action="https://github.com/mandywl/10-Team-Profile-Generator"
+            data-action="https://github.com/mandywl/Team-Profile-Generator"
           />
           <img
             src="./assets/burger_app.png"
