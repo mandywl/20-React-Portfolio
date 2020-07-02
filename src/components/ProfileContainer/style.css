@@ -1,10 +1,10 @@
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url("./Profile_background.png");
+  background-image: url("./profile1.png");
 }
 
 .bgimg-2 {
-  background-image: url("./golf-profile.jpg");
+  background-image: url("./profile2.jpg");
 }
 
 /* Create a Parallax Effect */
