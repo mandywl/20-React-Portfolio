@@ -66,11 +66,6 @@ function Navbar(props) {
           onClickFunction={props.onClickFunction}
           label="CONTACT"
         />
-        <NavItem
-          href="#"
-          onClickFunction={props.onClickFunction}
-          label="SEARCH"
-        />
       </div>
     </div>
   );
