@@ -56,7 +56,7 @@
 
 👤 **Mandy Wells-Lakeland**
 
-- Website: https://mandywl.github.io/02-Responsive-Portfolio-Mandy/
+- Website: https://mandy-wellslakeland.herokuapp.com/
 - Github: [@mandywl](https://github.com/mandywl)
 - LinkedIn: [@mandywellslakeland](https://www.linkedin.com/in/mandy-wells-lakeland-23b55087/)
 
